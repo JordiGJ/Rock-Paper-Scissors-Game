@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+h1 {
+  margin-top: 6.25rem;
+}
+h2 {
+  margin: 1.5rem 0 0.5rem;
+}
+button {
+  border: none;
+  font-size: 3rem;
+  padding: 0.7rem;
+  margin-right: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: unset;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+button:hover {
+  opacity: 0.6;
+}
+#rock {
+  background-color: red;
+}
+#paper {
+  background-color: rgb(0, 149, 255);
+}
+#scissors {
+  background-color: rgb(72, 177, 6);
+}
+p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.display {
+  display: none;
+}
+#userAmount {
+  color: rgb(0, 149, 255);
+}
+#comAmount {
+  color: red;
+}
+
+@media (width <= 297px) {
+  button {
+    margin-top: 0.3rem;
+  }
+}
